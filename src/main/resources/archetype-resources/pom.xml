@@ -5,7 +5,7 @@
   <artifactId>${artifactId}</artifactId>
   <packaging>ear</packaging>
   <version>${version}</version>
-  <name>${artifactId} Maven J2EE 1.4 Assembly</name>
+  <name>${artifactId} J2EE 1.4 Assembly</name>
   <url>http://maven.apache.org</url>
 
   <build>
@@ -17,6 +17,14 @@
         <configuration>
           <source>1.4</source>
           <target>1.4</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ear-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+            <version>1.4</version>
         </configuration>
       </plugin>
     </plugins>
